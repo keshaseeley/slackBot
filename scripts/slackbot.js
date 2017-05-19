@@ -102,7 +102,7 @@ stones = [
 
 module.exports = function(robot) {
 
-   robot.respond(/gimme stones/i, function(msg) {
+   robot.respond(/stones/i, function(msg) {
     return msg.send("Rock on!");
    });
    

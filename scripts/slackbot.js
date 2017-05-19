@@ -39,7 +39,6 @@ If you want to supplement your existing code above with any the code below,
 you need to move the contents of module.exports below into the module.exports code above. 
 */
 
-/*
 var squirrels;
 squirrels = ["http://img.skitch.com/20100714-d6q52xajfh4cimxr3888yb77ru.jpg", "https://img.skitch.com/20111026-r2wsngtu4jftwxmsytdke6arwd.png", "http://cl.ly/1i0s1r3t2s2G3P1N3t3M/Screen_Shot_2011-10-27_at_9.36.45_AM.png", "http://shipitsquirrel.github.com/images/squirrel.png"];
 
@@ -55,7 +54,6 @@ module.exports = function(robot) {
     return msg.send(msg.random(squirrels));
   });
 };
-*/
 
 
 /* Pseudocode
@@ -77,33 +75,38 @@ if no, respond msg: simma down now
 
 */
 
-var stones = [
-  "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
-  "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
-  "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
-];
+// var stones;
+// stones = [
+//   "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
+//   "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
+//   "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
+// ];
 
-var zeppelin = [
-  "https://www.youtube.com/watch?v=jrqMdja4eYs",
-  "https://www.youtube.com/watch?v=Ee33FsDANk0",
-  "https://www.youtube.com/watch?v=9BokEvEqiVA"
+// var zeppelin;
+// zepplin = [
+//   "https://www.youtube.com/watch?v=jrqMdja4eYs",
+//   "https://www.youtube.com/watch?v=Ee33FsDANk0",
+//   "https://www.youtube.com/watch?v=9BokEvEqiVA"
 
-];
+// ];
 
-var petty = [
-  "https://www.youtube.com/watch?v=h0JvF9vpqx8",
-  "https://www.youtube.com/watch?v=9TlBTPITo1I",
-  "https://www.youtube.com/watch?v=6UD0c58nNCQ",
+// var petty;
+// petty = [
+//   "https://www.youtube.com/watch?v=h0JvF9vpqx8",
+//   "https://www.youtube.com/watch?v=9TlBTPITo1I",
+//   "https://www.youtube.com/watch?v=6UD0c58nNCQ",
 
-];
+// ];
 
-var rock = stones + zeppelin + petty;
+// var rock = stones + zeppelin + petty;
 
-module.exports = function(robot) {
+// module.exports = function(robot) {
 
-   robot.hear(/gimme stones/i, function(msg) {
-    return msg.send("Rock on!");
-    return msg.send(msg.random(stones));
-
-   });
-}
+//    robot.hear(/gimme stones/i, function(msg) {
+//     return msg.send("Rock on!");
+//    });
+   
+//    return robot.hear(/Rock on/i, function(msg) {
+//     return msg.send(msg.random(stones));
+//   });
+// }

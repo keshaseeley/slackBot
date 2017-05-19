@@ -18,13 +18,13 @@
 // <github username of the original script author>
 //
 
-// module.exports = function(robot) {
-//   //  YOUR CODE HERE
-//   //  Example
-//    robot.hear(/kesha/i, function(msg) {
-//      return msg.send("I love Kesha");
-//    });
-// }
+module.exports = function(robot) {
+  //  YOUR CODE HERE
+  //  Example
+   robot.hear(/kesha/i, function(msg) {
+     return msg.send("Kesha is working!");
+   });
+} 
 
 /************************************
 
@@ -77,30 +77,31 @@ if no, respond msg: simma down now
 
 */
 
-var stones = [
-  "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
-  "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
-  "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
-];
+// var stones = [
+//   "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
+//   "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
+//   "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
+// ];
 
-var zeppelin = [
-  "https://www.youtube.com/watch?v=jrqMdja4eYs",
-  "https://www.youtube.com/watch?v=Ee33FsDANk0",
-  "https://www.youtube.com/watch?v=9BokEvEqiVA"
+// var zeppelin = [
+//   "https://www.youtube.com/watch?v=jrqMdja4eYs",
+//   "https://www.youtube.com/watch?v=Ee33FsDANk0",
+//   "https://www.youtube.com/watch?v=9BokEvEqiVA"
 
-];
+// ];
 
-var petty = [
-  "https://www.youtube.com/watch?v=h0JvF9vpqx8",
-  "https://www.youtube.com/watch?v=9TlBTPITo1I",
-  "https://www.youtube.com/watch?v=6UD0c58nNCQ",
+// var petty = [
+//   "https://www.youtube.com/watch?v=h0JvF9vpqx8",
+//   "https://www.youtube.com/watch?v=9TlBTPITo1I",
+//   "https://www.youtube.com/watch?v=6UD0c58nNCQ",
 
-];
+// ];
 
-var rock = stones + zeppelin + petty;
+// var rock = stones + zeppelin + petty;
 
-module.exports = function(robot) {
+// module.exports = function(robot) {
 
-   robot.hear(/gimme rock/i, function(msg) {
-     return msg.send("Rock on!");
-   }
+//    robot.hear(/gimme rock/i, function(msg) {
+//      return msg.send("Rock on!");
+//    }
+// }

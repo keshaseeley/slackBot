@@ -18,13 +18,13 @@
 // <github username of the original script author>
 //
 
-module.exports = function(robot) {
-  //  YOUR CODE HERE
-  //  Example
-   robot.hear(/kesha/i, function(msg) {
-     return msg.send("Kesha is working!");
-   });
-} 
+// module.exports = function(robot) {
+//   //  YOUR CODE HERE
+//   //  Example
+//    robot.hear(/kesha/i, function(msg) {
+//      return msg.send("Kesha is working!");
+//    });
+// } 
 
 /************************************
 
@@ -99,9 +99,17 @@ if no, respond msg: simma down now
 
 // var rock = stones + zeppelin + petty;
 
-// module.exports = function(robot) {
 
-//    robot.hear(/gimme rock/i, function(msg) {
-//      return msg.send("Rock on!");
-//    }
-// }
+// module.exports = function(robot) {
+//   //  YOUR CODE HERE
+//   //  Example
+//    robot.hear(/kesha/i, function(msg) {
+//      return msg.send("Kesha is working!");
+//    });
+// } 
+module.exports = function(robot) {
+
+   robot.hear(/gimme rock/i, function(msg) {
+     return msg.send("Rock on!");
+   });
+}

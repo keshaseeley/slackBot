@@ -106,7 +106,7 @@ module.exports = function(robot) {
     return msg.send("Rock on!");
    });
    
-   return robot.hear(/Rock on/i, function(msg) {
+   return robot.hear(/stones/i, function(msg) {
     return msg.send(msg.random(stones));
   });
 }

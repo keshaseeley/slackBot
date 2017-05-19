@@ -103,4 +103,4 @@ module.exports = function(robot) {
 
    robot.hear(/gimme rock/i, function(msg) {
      return msg.send("Rock on!");
-   });
+   }

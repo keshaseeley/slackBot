@@ -104,9 +104,10 @@ module.exports = function(robot) {
 
    robot.respond(/stones/i, function(msg) {
     return msg.send("Rock on!");
+    return msg.send(msg.random(stones));
+
    });
    
-   return robot.hear(/stones/i, function(msg) {
-    return msg.send(msg.random(stones));
-  });
+  //  return robot.hear(/stones/i, function(msg) {
+  // });
 }

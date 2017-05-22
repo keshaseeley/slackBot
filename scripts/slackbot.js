@@ -91,7 +91,10 @@ var zeppelin;
 zepplin = [
   "https://www.youtube.com/watch?v=jrqMdja4eYs",
   "https://www.youtube.com/watch?v=Ee33FsDANk0",
-  "https://www.youtube.com/watch?v=9BokEvEqiVA"
+  "https://www.youtube.com/watch?v=9BokEvEqiVA",
+  "https://www.rockhall.com/sites/default/files/styles/header_image_portrait/public/ledzeppelin1973_gruen_webuseonly.jpg",
+  "http://static.spin.com/files/140926-led-zeppelin-640x426.jpg",
+  "http://www.musiclipse.com/wp-content/uploads/2014/04/led-zeppelin-mothership-poster.png"
 ];
 
 var petty;
@@ -99,6 +102,8 @@ petty = [
   "https://www.youtube.com/watch?v=h0JvF9vpqx8",
   "https://www.youtube.com/watch?v=9TlBTPITo1I",
   "https://www.youtube.com/watch?v=6UD0c58nNCQ",
+  "https://static01.nyt.com/images/2013/05/23/arts/petty/petty-master1050.jpg",
+  "http://pixel.nymag.com/imgs/daily/vulture/2015/01/26/26-tom-petty-1.w750.h560.2x.jpg"
 ];
 
 var rock;
@@ -107,6 +112,12 @@ rock = stones + zeppelin + petty
 module.exports = function(robot) {
    return robot.hear(/Rolling Stones/i, function(msg) {
     return msg.send(msg.random(stones));
+  });
+  return robot.hear(/Led Zeppelin/i, function(msg) {
+    return msg.send(msg.random(zeppelin));
+  });
+    return robot.hear(/Tom Petty/i, function(msg) {
+    return msg.send(msg.random(petty));
   });
   return robot.respond(/I like to rock!/i, function(msg) {
     return msg.send(msg.random(rock));

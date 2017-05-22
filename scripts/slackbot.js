@@ -110,9 +110,9 @@ var rock;
 rock = stones + zeppelin + petty;
 
 module.exports = function(robot) {
-  // return robot.hear(/Rolling Stones/i, function(msg) {
-  //   return msg.send(msg.random(stones));
-  // });
+  return robot.hear(/Rolling Stones/i, function(msg) {
+    return msg.send(msg.random(stones));
+  });
 
   // return robot.hear(/Led Zeppelin/i, function(msg) {
   //   return msg.send(msg.random(zeppelin));

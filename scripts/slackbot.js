@@ -77,9 +77,9 @@ if no, respond msg: simma down now
 
 var stones;
 stones = [
-  // "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
-  // "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
-  // "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
+  "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
+  "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
+  "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
   "https://si.wsj.net/public/resources/images/BN-NW458_Stones_GR_20160504165415.jpg",
   "http://img.wennermedia.com/social/rs-7972-121110-rollingstones-9-rect-1352579213.jpg",
   "https://s3.amazonaws.com/rapgenius/rollingstones_2372801b.jpg",

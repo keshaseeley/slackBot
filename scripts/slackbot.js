@@ -87,8 +87,28 @@ stones = [
   "http://diffuser.fm/files/2013/10/RollingStones_Keystone_Hulton.jpg"
 ];
 
+var zeppelin;
+zepplin = [
+  "https://www.youtube.com/watch?v=jrqMdja4eYs",
+  "https://www.youtube.com/watch?v=Ee33FsDANk0",
+  "https://www.youtube.com/watch?v=9BokEvEqiVA"
+];
+
+var petty;
+petty = [
+  "https://www.youtube.com/watch?v=h0JvF9vpqx8",
+  "https://www.youtube.com/watch?v=9TlBTPITo1I",
+  "https://www.youtube.com/watch?v=6UD0c58nNCQ",
+];
+
+var rock;
+rock = stones + zeppelin + petty
+
 module.exports = function(robot) {
    return robot.hear(/Rolling Stones/i, function(msg) {
     return msg.send(msg.random(stones));
+  });
+  return robot.respond(/I like to rock!/i, function(msg) {
+    return msg.send(msg.random(rock));
   });
 };

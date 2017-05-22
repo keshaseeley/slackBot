@@ -77,37 +77,18 @@ if no, respond msg: simma down now
 
 var stones;
 stones = [
-  "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
-  "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
-  "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
+  // "https://www.youtube.com/watch?v=8kl6q_9qZOs&index=17&list=PL11CC59281C5FDFB3",
+  // "https://www.youtube.com/watch?v=jo34VhfcetU&index=29&list=PL11CC59281C5FDFB3",
+  // "https://www.youtube.com/watch?v=hic-dnps6MU&list=PL11CC59281C5FDFB3&index=2"
+  "https://si.wsj.net/public/resources/images/BN-NW458_Stones_GR_20160504165415.jpg",
+  "http://img.wennermedia.com/social/rs-7972-121110-rollingstones-9-rect-1352579213.jpg",
+  "https://s3.amazonaws.com/rapgenius/rollingstones_2372801b.jpg",
+  "https://i.ytimg.com/vi/rPFGWVKXxm0/maxresdefault.jpg",
+  "http://diffuser.fm/files/2013/10/RollingStones_Keystone_Hulton.jpg"
 ];
 
-// var zeppelin;
-// zepplin = [
-//   "https://www.youtube.com/watch?v=jrqMdja4eYs",
-//   "https://www.youtube.com/watch?v=Ee33FsDANk0",
-//   "https://www.youtube.com/watch?v=9BokEvEqiVA"
-// ];
-
-// var petty;
-// petty = [
-//   "https://www.youtube.com/watch?v=h0JvF9vpqx8",
-//   "https://www.youtube.com/watch?v=9TlBTPITo1I",
-//   "https://www.youtube.com/watch?v=6UD0c58nNCQ",
-// ];
-
-// var rock = stones + zeppelin + petty;
-
 module.exports = function(robot) {
-
-  //   robot.respond(/I like to rock!/i, function(msg) {
-  //   return msg.send("Rock on!");
-
-  //  });
-   
-   robot.hear(/Rolling Stones/i, function(msg) {
+   return robot.hear(/Rolling Stones/i, function(msg) {
     return msg.send(msg.random(stones));
-  
   });
-
 };

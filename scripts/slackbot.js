@@ -102,14 +102,14 @@ stones = [
 
 module.exports = function(robot) {
 
-   robot.hear(/rock/i, function(msg) {
-    return msg.send("Rock on! 5.22");
+   return robot.respond(/I like to rock!/i, function(msg) {
+    return msg.send("Rock on!");
 
    });
    
-  robot.respond(/stones/i, function(msg) {
-    return msg.reply(msg.random(stones));
+  return robot.hear(/Rolling Stones/i, function(msg) {
+    return msg.send(msg.random(stones));
   
   });
 
-}
+};

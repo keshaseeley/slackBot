@@ -102,7 +102,7 @@ stones = [
 
 module.exports = function(robot) {
 
-   robot.hear(/stones/i, function(msg) {
+   robot.hear(/rock/i, function(msg) {
     return msg.send("Rock on! 5.22");
 
    });

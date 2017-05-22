@@ -110,17 +110,20 @@ var rock;
 rock = stones + zeppelin + petty;
 
 module.exports = function(robot) {
-  // return robot.respond(/I like to rock!/i, function(msg) {
-  //   return msg.send(msg.random(rock));
-  // });
   // return robot.hear(/Rolling Stones/i, function(msg) {
   //   return msg.send(msg.random(stones));
   // });
-  return robot.hear(/Led Zeppelin/i, function(msg) {
-    return msg.send(msg.random(zeppelin));
-  });
+
+  // return robot.hear(/Led Zeppelin/i, function(msg) {
+  //   return msg.send(msg.random(zeppelin));
+  // });
+
   // return robot.hear(/Tom Petty/i, function(msg) {
   //   return msg.send(msg.random(petty));
   // });
+
+  return robot.respond(/I like to rock!/i, function(msg) {
+    return msg.send("Me too!");
+  });
 
 };

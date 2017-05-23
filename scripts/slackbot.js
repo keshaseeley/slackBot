@@ -60,9 +60,9 @@ you need to move the contents of module.exports below into the module.exports co
 variables: array of URLs for zeppelin, stones, petty
 variable rock: zeppelin + stones + petty
 
-hear gimme band
+hear "I like to rock!"
 respond msg: rock on!
-send band youtube link
+send random rock youtube link
     
     if rock, send random rock
     else if zeppelin, send random zeppelin
@@ -107,24 +107,25 @@ petty = [
 ];
 
 var rock;
-rock = stones + zeppelin + petty;
+var rock = stones.concat(zeppelin, petty);
 
 module.exports = function(robot) {
-  return robot.respond(/I like to rock!/i, function(msg) {
-    return msg.send("Me too!");
-    //return msg.send(msg.random(rock));
+
+  robot.hear(/Rolling Stones/i, function(msg) {
+      msg.send(msg.random(stones));
   });
 
-  return robot.hear(/Rolling Stones/i, function(msg) {
-    return msg.send(msg.random(stones));
+ robot.hear(/Led Zeppelin/i, function(msg) {
+     msg.send(msg.random(zeppelin));
   });
 
-  // return robot.hear(/Led Zeppelin/i, function(msg) {
-  //   return msg.send(msg.random(zeppelin));
-  // });
+ robot.hear(/Tom Petty/i, function(msg) {
+     msg.send(msg.random(petty));
+  });
 
-  // return robot.hear(/Tom Petty/i, function(msg) {
-  //   return msg.send(msg.random(petty));
-  // });
+  robot.hear(/I like to rock/i, function(msg) {
+    msg.send("Me too!");
+    return msg.send(msg.random(rock));
+  });
 
 };
